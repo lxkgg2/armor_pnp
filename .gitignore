@@ -1,0 +1,38 @@
+# 编译产物
+build/
+cmake-build-*/
+*.o
+*.obj
+*.so
+*.a
+*.out
+
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# 标定与测试数据（体积大或本地相关）
+calibration_images/
+results/
+videos/
+*.mp4
+*.avi
+
+# 模型文件（体积大，单独下载）
+# 如果需要随仓库提供模型，把下面两行注释掉
+# *.onnx
+# best.onnx
+
+# 本地标定结果（每台相机不同，不应提交）
+# 如果老师要求提交标定参数，把下面这行注释掉
+# calib.yml
+
+# 系统文件
+.DS_Store
+Thumbs.db
+*~
+
+# 临时文件
+*.log
+*.tmp
